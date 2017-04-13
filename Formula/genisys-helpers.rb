@@ -2,7 +2,7 @@ class GenisysHelpers < Formula
   VERSION = "1.0.0"
 
   desc "Helper scripts for managing project-genisys"
-  url "git@github.com:octoblu/ops-tools-genisys-helpers.git", :using => :git, :revision => "037e67a"
+  url "git@github.com:octoblu/ops-tools-genisys-helpers.git", :using => :git, :revision => "d39d19deff110f928fe76ee49898089d4c0ab4af"
   sha256 "bbb0214067f7bc7bd0b3ca79210d8af70fbc56fbda5c0cb32a5255bf4ff7feb9"
   depends_on 'jq'
 
@@ -13,7 +13,7 @@ class GenisysHelpers < Formula
     bin.install "genisys-bootstrap-customer"
     bin.install "genisys-bootstrap-rooms"
     bin.install "genisys-find-devices"
-    bin.install "genisys-find-group-devices"
+    bin.install "genisys-find-customer-devices"
     bin.install "genisys-find-rooms"
     bin.install "genisys-make-errors-device"
     bin.install "genisys-update-connector-versions"
