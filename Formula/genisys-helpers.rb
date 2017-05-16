@@ -1,9 +1,9 @@
 class GenisysHelpers < Formula
-  VERSION = "3.0.0"
+  VERSION = "3.1.0"
 
   desc "Helper scripts for managing project-genisys"
   url "https://github.com/octoblu/ops-tools-genisys-helpers/archive/v#{VERSION}.tar.gz"
-  sha256 "1b2971e73ede88407261021706d7bcdb7e24d0d634c4a538aee3881416932948"
+  sha256 "b1c0c02b16e8ea2b8fd587c5d21dc352ee614a74b6b8ecad9da56f6a3c219a8b"
   depends_on 'jq'
 
   def install
@@ -19,6 +19,8 @@ class GenisysHelpers < Formula
     bin.install "genisys-find-rooms"
     bin.install "genisys-make-errors-device"
     bin.install "genisys-update-connector-versions"
+    bin.install "genisys-upsert-customer-monitor-device"
+    bin.install "genisys-upsert-room-monitor-device"
   end
 
   test do
