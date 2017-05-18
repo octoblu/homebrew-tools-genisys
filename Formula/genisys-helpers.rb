@@ -1,5 +1,5 @@
 class GenisysHelpers < Formula
-  VERSION = "4.1.1"
+  VERSION = "4.2.0"
 
   desc "Helper scripts for managing project-genisys"
   url "https://github.com/octoblu/ops-tools-genisys-helpers/archive/v#{VERSION}.tar.gz"
@@ -18,6 +18,7 @@ class GenisysHelpers < Formula
     bin.install "genisys-find-customer-devices"
     bin.install "genisys-find-rooms"
     bin.install "genisys-make-errors-device"
+    bin.install "genisys-restart-slurries"
     bin.install "genisys-update-connector-versions"
     bin.install "genisys-upsert-customer-monitor-device"
     bin.install "genisys-upsert-room-monitor-device"
