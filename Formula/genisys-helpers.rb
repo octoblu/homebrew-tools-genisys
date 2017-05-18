@@ -1,9 +1,9 @@
 class GenisysHelpers < Formula
-  VERSION = "3.1.2"
+  VERSION = "4.0.0"
 
   desc "Helper scripts for managing project-genisys"
   url "https://github.com/octoblu/ops-tools-genisys-helpers/archive/v#{VERSION}.tar.gz"
-  sha256 "e24d82429d4c6f43aa6117c6bd1c5af93bb8c9e8a173f33f78465af5b8ed6270"
+  sha256 "a5341d7e8ec51c0279ebfa923c561a7c1d2a79cec6e881db2f84a12865105f10"
   depends_on 'jq'
 
   def install
