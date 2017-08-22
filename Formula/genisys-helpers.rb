@@ -1,9 +1,9 @@
 class GenisysHelpers < Formula
-  VERSION = "6.2.2"
+  VERSION = "6.3.0"
 
   desc "Helper scripts for managing project-genisys"
   url "https://github.com/octoblu/ops-tools-genisys-helpers/archive/v#{VERSION}.tar.gz"
-  sha256 "563fbf8f47aec1b9f9799a73753a830fd17239177902720d8782429be9f14962"
+  sha256 "b72ec4d3f2fae8f8169887c8e757e7c884f04466ae519ebaf44937fc764619f1"
   depends_on 'jq'
 
   def install
@@ -16,6 +16,7 @@ class GenisysHelpers < Formula
     bin.install "genisys-create-customer"
     bin.install "genisys-find-room-devices"
     bin.install "genisys-find-customer-devices"
+    bin.install "genisys-find-superuser-devices"
     bin.install "genisys-find-rooms"
     bin.install "genisys-make-errors-device"
     bin.install "genisys-restart-slurries"
